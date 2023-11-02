@@ -608,6 +608,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border: none;
     background-color: #4D5AE5
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #FFFfff;
@@ -619,7 +620,7 @@ img {
     background-color: #4D5AE5;
 }
 
-.footer-btn-icon{
+.footer-icon-btn{
     
         display: inline-flex;
         align-items: center;
