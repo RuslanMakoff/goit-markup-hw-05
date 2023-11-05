@@ -741,10 +741,21 @@ position: relative;
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
-    
-
-   
+    color: #2E2F42;
 }
+
+.icon-name:focus,
+.icon-name:hover,
+.input-name:focus,
+.input-name:hover,
+.input-name:focus+.icon-name,
+.input-name:hover+.icon-name,
+.textarea-comment:focus,
+.textarea-comment:hover{
+    border-color: #4D5AE5;
+    fill: #4D5AE5
+}
+
 
 .icon-name{
     position: absolute;
@@ -752,8 +763,10 @@ position: relative;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #4D5AE5;
+    fill: #2E2F42;
 }
+
+
 
 .comment-div{
     margin-bottom: 16px;
@@ -780,15 +793,4 @@ position: relative;
 }
 
 
-.textarea-comment:focus{
-    border-color: #4D5AE5;
-}
-
-
-
-
-
-.input-name{
-    color: #2E2F42;
-}
 /*-----------------MODAL PAGE----------------*/
