@@ -689,13 +689,13 @@ img {
 
 .close-btn:hover+.close-icon,
 .close-btn:focus+.close-icon{
-    border: none;
     background-color: #404bbf;
     fill: #FFFfff;
 }
 
 .close-btn:focus .close-btn:hover,{
     background-color: #404bbf;
+    border: none;
 }
 
 .close-icon{
@@ -794,4 +794,38 @@ img {
 }
 
 
+.checkbox-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.privacy-policy-text {
+    color: #4D5AE5;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+}
+
+.checkbox-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-right: 8px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked+.checkbox-text>.checkbox-icon {
+    background-color: #404bbf;
+    fill: #f4f4fd;
+    border: none;
+}
 /*-----------------MODAL PAGE----------------*/
