@@ -623,11 +623,11 @@ img {
 
 .footer-icon-btn{
     
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 16px;
-        fill: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    fill: #FFFFFF;
 }
 
 
@@ -636,66 +636,66 @@ img {
 
 /*-----------------MODAL PAGE----------------*/
 .modal{
+    visibility: hidden;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 9999;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(46, 47, 66, 0.4);
+    }
+
+
+.is-open {
+    visibility: visible;
 }
 
 .modal-window{
     position: absolute;
-    width: 408px;
-    min-height: 584px;
     top: 50%;
     left: 50%;
-    padding: 72px 24px 24px 24px;
-    border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 408px;
+    min-height: 584px;
+    background: #FCFCFC;
+    border-radius: 4px;
+    padding: 72px 24px 24px 24px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    background: #fcfcfc;
+     0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    cursor: pointer;
     padding: 0;
-    top:24px;
+    top: 24px;
     right: 24px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover,
-.close-btn:focus{
+.close-icon:focus,
+.close-icon:hover,
+.close-btn:hover+.close-icon,
+.close-btn:focus+.close-icon{
     border: none;
     background-color: #404bbf;
+    fill: #FFFfff;
 }
 
 
 .close-icon{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-icon:hover,
-.close-icon:focus{
-    fill: #FFFfff ;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .modal-text{
@@ -725,14 +725,14 @@ img {
 }
 
 .user-name{
-position: relative;
+    position: relative;
 }
 
 .input-name{
     font-family: inherit;
-        font-size: 100%;
-        line-height: 1.15;
-        margin: 0;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
     outline: transparent;
     width: 100%;
     height: 40px;
@@ -768,28 +768,25 @@ position: relative;
 
 
 
-.comment-div{
+.comment-div,
+.textarea-container{
     margin-bottom: 16px;
-}
-
-.textarea-container {
-    margin-bottom: 16px
 }
 
 .textarea-comment{
     width: 100%;
-        height: 120px;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.04em;
-        color: rgba(46, 47, 66, 0.4);
-        border: 1px solid rgba(46, 47, 66, 0.4);
-        border-radius: 4px;
-        background-color: transparent;
-        padding: 8px 16px;
-        outline: transparent;
-        resize: none;
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
