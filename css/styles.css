@@ -686,6 +686,8 @@ img {
 
 .close-icon:focus,
 .close-icon:hover,
+.close-btn:focus
+.close-btn:hover,
 .close-btn:hover+.close-icon,
 .close-btn:focus+.close-icon{
     border: none;
