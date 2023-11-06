@@ -689,6 +689,10 @@ img {
 .close-btn:hover+.close-icon,
 .close-btn:focus+.close-icon{
     background-color: #404bbf;
+}
+
+.close-btn:focus,
+.close-btn:hover{
     fill: #FFFfff;
 }
 
@@ -747,13 +751,14 @@ img {
     color: #2E2F42;
 }
 
-
+.input-name:focus,
+.input-name:hover,
 .input-name:focus+.icon-name,
 .input-name:hover+.icon-name,
 .textarea-comment:focus,
 .textarea-comment:hover{
     border-color: #4D5AE5;
-    fill: #4D5AE5
+    fill: #4D5AE5;
 }
 
 
