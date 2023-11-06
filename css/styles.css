@@ -685,7 +685,9 @@ img {
 }
 
 .close-icon:focus,
-.close-icon:hover,
+.close-icon:hover{
+    background-color: #404bbf;
+}
 .close-btn:hover+.close-icon,
 .close-btn:focus+.close-icon{
     background-color: #404bbf;
